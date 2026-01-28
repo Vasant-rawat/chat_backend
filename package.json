@@ -1,0 +1,22 @@
+{
+  "name": "chat-backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.9"
+  },
+   "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+    "scripts":{"dev":"nodemon index.ts"},
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "chat-backend": ".",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-appwrite": "^21.1.0"
+  }
+}
