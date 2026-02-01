@@ -11,7 +11,7 @@
    "peerDependencies": {
     "typescript": "^5.9.3"
   },
-    "scripts":{"dev":"nodemon index.ts"},
+    "scripts":{"dev":"nodemon --exec bun index.ts"},
   "dependencies": {
     "bcrypt": "^6.0.0",
     "chat-backend": ".",

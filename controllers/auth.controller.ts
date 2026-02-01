@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express"
 import { account } from "../config/appwrite"
-export const singup = async (req: Request, res: Response) => {
+export const signup = async (req: Request, res: Response) => {
     const { email, password, userId, name } = req.body
     try {
         const result = await account.create({
@@ -24,7 +24,6 @@ export const singup = async (req: Request, res: Response) => {
 export const singin = async (req: Request, res: Response) => {
     const { email, password } = req.body;
     try {
-        //:console.warn();
         console.log("singing")
         const result = await account.createEmailPasswordSession({
             email: email,

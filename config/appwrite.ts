@@ -1,4 +1,4 @@
-import { Account, Client, Databases } from "node-appwrite";
+import { Account, Client, Databases, TablesDB } from "node-appwrite";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -15,5 +15,5 @@ export const account = new Account(client);
 export default client;
 
 //Data Bases
-export const database=new Databases(client); 
+export const database=new TablesDB(client); 
 
